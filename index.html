@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="undraw_reading_re_29f8 (1).svg">
+        </section>
+
+        <section id="form-section">
+            
+            <h1>Registro de Calificaciones</h1>
+            <form id="grade-form">
+                <div class="input-box">
+                    <label for="subject">
+                        Materia:
+                    </label>
+                    <input type="text" id="subject" required>
+                </div>
+                <div class="input-box">
+                    <label for="grade">
+                        Calificación:
+                    </label>
+                    <input type="number" id="grade" min="0" max="10" step="0.01" required>
+                </div>
+                <button type="submit">Agregar Calificación</button>
+            </form>
+            <div id="average" class="hidden">
+                <h2>Promedio: <span id="average-value"></span></h2>
+            </div>
+        </section>
+        <section id="grades-section">
+            <h2>Calificaciones Registradas</h2>
+            <ul id="grades-list"></ul>
+        </section>
+    </main>
+    <script src="scrip.js"></script>
+</body>
+</html>
